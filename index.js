@@ -1,6 +1,23 @@
-const os = require('os');
+const fs = require('fs');
 
-console.log(os.platform());
-console.log(os.release());
-console.log('free mem: ', os.freemem(), ' bytes');
-console.log('total mem: ', os.totalmem(), ' bytes');
+fs.writeFile('./texto.txt', 'linea uno', function(err){ // código asíncrono, se ejecutará por otro hilo
+    if(err){
+        console.log(err);
+    }
+    console.log('Archivo creado')
+})
+
+/* const result = fs.writeFile('', '') // código bloqueante (hasta que no se complete no seguirá con las siguientes líneas) */
+
+console.log('última línea de código')
+
+const users = query('SELECT * FROM Users');
+
+query()('SELECT * FROM Users', function(err, users) {
+    if(err){
+        console.log(err)
+    }
+    if (users){
+        console.log('tusa')
+    }
+})
