@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "colors": "^1.4.0"
-  }
+  },
+  "name": "trying_node",
+  "version": "1.0.0",
+  "description": "un cursillo de node",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andogoiko/trying_NodeJs.git"
+  },
+  "keywords": [
+    "nodeJs"
+  ],
+  "author": "andois",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andogoiko/trying_NodeJs/issues"
+  },
+  "homepage": "https://github.com/andogoiko/trying_NodeJs#readme"
 }
